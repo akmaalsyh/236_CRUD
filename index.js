@@ -13,3 +13,10 @@ app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
 });
 
+const db = mysql.createConnection({
+    host: 'localhost',
+    user: 'root',
+    password: 'sql123', // sesuaikan dengan password MySQL Anda
+    database: 'biodata',
+    port: 3308 // sesuaikan dengan port MySQL Anda
+});
